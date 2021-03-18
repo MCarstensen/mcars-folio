@@ -1,5 +1,4 @@
 const colors = require('tailwindcss/colors');
-const loSpecColors = require('./styles/loSpec.colors.ts');
 
 module.exports = {
   purge: [],
@@ -26,34 +25,18 @@ module.exports = {
       indigo: colors.indigo,
       purple: colors.violet,
       pink: colors.pink,
-      "ls-light" : {
+      "ls" : {
         // https://lospec.com/palette-list/note-2c
-        // Green
-        900: "#044800",
-        800: "#1c650f",
-        700: "#4d7700",
-        600: "#5f890a",
-        500: "#6d9712",
-        400: "#82a53c",
-        300: "#97b35e",
-        200: "#b4c88b",
-        100: "#d2deb8",
-        50: "#edf2e2", // primary
+        light: "#edf2e2", // primary
+        "light-500": "#bbbfb0",
+        "light-600": "8b8f81",
+        "light-700": "#5e6255",
+        "light-800": "#34382c",
+        "light-900": "#0e1200",
+        dark: "#2e3037",
+        "dark-500": "#575961",
       },
-      "ls-dark" : {
-        // https://lospec.com/palette-list/obra-dinn-ibm-8503
-        // Gray
-        900: "#2e3037", // secondary
-        800: "#41444e",
-        700: "#525764",
-        600: "#646a7b",
-        500: "#72788c",
-        400: "#878c9c",
-        300: "#9da1ae",
-        200: "#b9bbc4",
-        100: "#d5d6db",
-        50: "#eeeeee",
-      },
+    
     },
     spacing: {
       px: '1px',
@@ -486,6 +469,8 @@ module.exports = {
       '5xl': '64rem',
       '6xl': '72rem',
       '7xl': '80rem',
+      '8xl': '88rem',
+      '9xl': '96rem',
       full: '100%',
       min: 'min-content',
       max: 'max-content',

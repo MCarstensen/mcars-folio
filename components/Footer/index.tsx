@@ -5,17 +5,17 @@ import { DateTime } from 'luxon';
 const Footer: React.FC = () => {
   return (
     <footer>
-      <Container tw="">
+      <Container tw="max-w-3xl my-10 rounded-3xl py-10">
 
-        <div tw="grid grid-cols-1 md:(grid-cols-3) text-xl text-center">
+        <div tw="flex justify-evenly text-xl text-center ">
           <a>LinkedIn</a>
           <a>Github</a>
           <a>codepen</a>
         </div>
+      </Container>
         <div tw="text-center align-baseline">
           <span tw="text-sm">&copy; {DateTime.now().year}</span>
         </div>
-      </Container>
     </footer>
   );
 };
