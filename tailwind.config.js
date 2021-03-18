@@ -1,4 +1,5 @@
-const colors = require('tailwindcss/colors')
+const colors = require('tailwindcss/colors');
+const loSpecColors = require('./styles/loSpec.colors.ts');
 
 module.exports = {
   purge: [],
@@ -15,7 +16,6 @@ module.exports = {
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
-
       black: colors.black,
       white: colors.white,
       gray: colors.coolGray,
@@ -26,6 +26,34 @@ module.exports = {
       indigo: colors.indigo,
       purple: colors.violet,
       pink: colors.pink,
+      "ls-light" : {
+        // https://lospec.com/palette-list/note-2c
+        // Green
+        900: "#044800",
+        800: "#1c650f",
+        700: "#4d7700",
+        600: "#5f890a",
+        500: "#6d9712",
+        400: "#82a53c",
+        300: "#97b35e",
+        200: "#b4c88b",
+        100: "#d2deb8",
+        50: "#edf2e2", // primary
+      },
+      "ls-dark" : {
+        // https://lospec.com/palette-list/obra-dinn-ibm-8503
+        // Gray
+        900: "#2e3037", // secondary
+        800: "#41444e",
+        700: "#525764",
+        600: "#646a7b",
+        500: "#72788c",
+        400: "#878c9c",
+        300: "#9da1ae",
+        200: "#b9bbc4",
+        100: "#d5d6db",
+        50: "#eeeeee",
+      },
     },
     spacing: {
       px: '1px',
@@ -164,6 +192,7 @@ module.exports = {
     },
     fontFamily: {
       sans: [
+        '"rubik"',
         'ui-sans-serif',
         'system-ui',
         '-apple-system',
@@ -180,6 +209,9 @@ module.exports = {
         '"Noto Color Emoji"',
       ],
       serif: ['ui-serif', 'Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
+      display: [
+        'montserrat'
+      ],
       mono: [
         'ui-monospace',
         'SFMono-Regular',

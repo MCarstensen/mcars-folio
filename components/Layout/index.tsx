@@ -1,10 +1,8 @@
 import { FC, ReactNode } from 'react';
-import tw, { GlobalStyles } from 'twin.macro';
+import tw from 'twin.macro';
+import GlobalStyles from '../GlobalStyles';
 import Header from '../Header';
-import Container from '../Container';
 import Footer from '../Footer';
-
-const Main = Container.withComponent('main');
 
 type LayoutProps = {
   children: ReactNode;
@@ -12,12 +10,12 @@ type LayoutProps = {
 
 const Layout: FC<LayoutProps> = ({ children }: LayoutProps) => {
   return (
-    <div tw="text-white bg-gray-800 font-serif">
+    <>
       <GlobalStyles />
       <Header />
-      <Main>{children}</Main>
+      <main>{children}</main>
       <Footer />
-    </div>
+    </>
   );
 };
 
